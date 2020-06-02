@@ -1,0 +1,111 @@
+:root {
+    --background-color-1: #E1AD01;
+    --background-color-1-light: #ffde4a;
+    --background-color-1-dark: #aa7e00;
+    --background-color-2: #1565c0;
+    --background-color-2-light: #5e92f3;
+    --background-color-2-dark: #003c8f;
+    --text-color-1: #111144;
+    --text-color-2: #EEEEEE;
+    /*E1AD01 - ba8406*/
+}
+
+.background-color-1 {
+    background-color: var(--background-color-1);
+}
+
+.background-color-2 {
+    background-color: var(--background-color-2);
+}
+
+.background-color-2-light {
+    background-color: var(--background-color-2-light);
+}
+
+.text-color-1 {
+    color: var(--text-color-1);
+}
+
+.text-color-2 {
+    color: var(--text-color-2);
+}
+
+@font-face {
+    font-family: 'Tenali Ramakrishna';
+    src: url('../font/Tenali_Ramakrishna/TenaliRamakrishna-Regular.ttf');
+}
+
+header {
+    background-color: var(--background-color-1-dark);
+}
+
+.breadcrumb {
+    color: var(--text-color-1);
+    background-color: var(--background-color-1-dark);
+}
+
+.breadcrumb-item,
+.breadcrumb-item .current,
+.breadcrumb-item a:active,
+.breadcrumb-item a:visited,
+.breadcrumb-item a:hover {
+    color: var(--text-color-1);
+}
+
+header img {
+    width: 10rem;
+}
+
+body {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: medium;
+    background-color: var(--background-color-1);
+    color: var(--text-color-1);
+}
+
+h1 {
+    font-weight: 900;
+    color: var(--text-color-1);
+    text-align: center;
+}
+
+#search-content {
+    border: 0.1rem;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+#projects {
+    margin-top: 2em;
+}
+
+#projects .card-header {
+    background-color: var(--background-color-2);
+    font-size: 2em;
+    color: var(--text-color-2);
+}
+
+#projects .card {
+    color: var(--text-color-1);
+    margin-top: 2px;
+    max-width: 20rem;
+}
+
+#projects .card-footer {
+    font-size: 1.5em;
+    color: var(--text-color-2);
+}
+
+footer {
+    background-color: var(--background-color-1-light);
+    color: var(--text-color-1);
+}
+
+footer a:active,
+footer a:visited,
+footer a:hover {
+    color: var(--text-color-1);
+}
