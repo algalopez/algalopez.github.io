@@ -11,11 +11,13 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="script/listener.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
 </head>
 
 <body>
     <header class="container-fluid">
-
         <!--<img class="img-fluid mx-auto d-block" src="image/my-octocat.png" alt="algalopez">-->
         <h1>&laquo; algalopez &raquo;</h1>
     </header>
@@ -32,11 +34,12 @@
         <h2>
             Content
         </h2>
+
         <div class="input-group mb-3">
             <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Search</span>
+                <button id="execute" class="btn btn-outline-dark" type="button">Execute</button>
             </div>
-            <input type="text" class="form-control" placeholder="asd" aria-label="qwe" aria-describedby="search">
+            <input id="query" type="text" class="form-control" placeholder="query" aria-label="Execute">
         </div>
         <div id="search-content">
             <div> Your Content </div>
@@ -157,7 +160,7 @@
             </div>
         </div>
 
-        <div class="footer-copyright text-center py-3 "> © Copyright 2020 </div>
+        <div class="footer-copyright text-center py-1 "> © Copyright 2020 </div>
     </footer>
 </body>
 
