@@ -24,4 +24,6 @@ function listener_start() {
 
     executeButton = document.getElementById("execute");
     executeButton.addEventListener('click', script_executeQuery);
+
+    startVis();
 }
