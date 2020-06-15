@@ -1,5 +1,6 @@
-name: Github.IO Cron_enberg Pipeline
+name: Github.IO Cronenberg Pipeline
 on:
+  repository_dispatch:
   schedule:
     # At 03:00 every sunday
     - cron:  '0 3 * * 0'
