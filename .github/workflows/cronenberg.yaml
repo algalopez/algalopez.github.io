@@ -1,0 +1,15 @@
+name: Github.IO Cron_enberg Pipeline
+on:
+  schedule:
+    # At 03:00 every sunday
+    - cron:  '0 3 * * 0'
+jobs:
+  echo:
+    name: echo
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 
+      - name: echo 
+        run: |
+          echo "::debug::Echo World!"
